@@ -16,7 +16,7 @@ const StyledMenu = styled.div`
     padding: 20px 0px 20px 0px;
     align-items: center;
     gap: 10px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(40px);
     width: 68px;
     height: 358px;
     border-radius: 100px;
