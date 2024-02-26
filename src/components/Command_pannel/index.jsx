@@ -10,7 +10,7 @@ import Eve_fight_song from "../../assets/Eve_fight_song.jpg";
 
 const StyledMenu = styled.div`
     position: absolute;
-    bottom: -60px;
+    bottom: -75px;
     display: flex;
     flex-direction: column;
     justify-content: center;
