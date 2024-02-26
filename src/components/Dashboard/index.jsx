@@ -10,6 +10,7 @@ import spotify from "../../assets/home_icon/spotify.svg";
 import menu from "../../assets/home_icon/menu.svg";
 import user from "../../assets/home_icon/user.svg";
 import library from "../../assets/home_icon/library.svg";
+import heart from "../../assets/home_icon/heart.svg";
 
 const StyledMenu = styled.div`
     display: flex;
@@ -76,10 +77,62 @@ const StyledContainer1Box2 = styled.div`
     height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     padding: 20px;
     border-radius: 10px;
     border: 1px solid blue;
+    overflow: hidden;
+`
+const StyledContainer1Box2Div1 = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+`
+const StyledContainer1Box2Div1Div = styled.div`
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+`
+const StyledContainer1Box2Div2 = styled.div`
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+`
+const StyledContainer1Box2Div2Div = styled.div`
+    background-color: black;
+    padding: 10px;
+    border-radius: 30px;
+    opacity: 0.4;
+`
+const StyledContainer1Box2Div3 = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+`
+const StyledContainer1Box2Div3Div = styled.div`
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+`
+const StyledContainer1Box2Div4 = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+`
+const StyledContainer1Box2Div4Div = styled.div`
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+`
+const StyledContainer1Box2Div4DivDiv1 = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border: 1px solid red;
 `
 
 function Dashboard(){
@@ -109,43 +162,108 @@ function Dashboard(){
 
                     <StyledContainer1Box2>
 
-                        <div>
-                            <div>
-                                <img src={library} alt="library" />
+                        <StyledContainer1Box2Div1>
+                            <StyledContainer1Box2Div1Div>
+                                <StyledImg src={library} alt="library" />
                                 <p>Your Library</p>
-                            </div>
-                            <div>
-                                <img src="" alt="plus" />
-                                <img src={arow} alt="arow" />
-                            </div>
-                        </div>
+                            </StyledContainer1Box2Div1Div>
+                            <StyledContainer1Box2Div1Div>
+                                <StyledImg src="" alt="plus" />
+                                <StyledImg src={arow} alt="arow" />
+                            </StyledContainer1Box2Div1Div>
+                        </StyledContainer1Box2Div1>
 
-                        <div>
-                            <div>
+                        <StyledContainer1Box2Div2>
+                            <StyledContainer1Box2Div2Div>
                                 Playlists
-                            </div>
-                            <div>
-                                artists
-                            </div>
-                        </div>
+                            </StyledContainer1Box2Div2Div>
+                            <StyledContainer1Box2Div2Div>
+                                Artists
+                            </StyledContainer1Box2Div2Div>
+                        </StyledContainer1Box2Div2>
 
-                        <div>
-                            <img src={search} alt="search" />
-                            <div>
+                        <StyledContainer1Box2Div3>
+                            <StyledImg src={search} alt="search" />
+                            <StyledContainer1Box2Div3Div>
                                 <p>Recents</p>
-                                <img src="" alt="row_down" />
-                            </div>
-                        </div>
+                                <StyledImg src="" alt="row_down" />
+                            </StyledContainer1Box2Div3Div>
+                        </StyledContainer1Box2Div3>
 
-                        <div>
-                            <div>
-                                <img src="" alt="image" />
+                        <StyledContainer1Box2Div4>
+                            <StyledContainer1Box2Div4Div>
+                                <StyledContainer1Box2Div4DivDiv1>
+                                    <img src={heart} alt="image" />
+                                </StyledContainer1Box2Div4DivDiv1>
                                 <div>
-                                    <p>Title</p>
-                                    <p>Artist</p>
+                                    <p>Liked Songs</p>
+                                    <p style={{color: "gray"}}>Playlist. 120 songs</p>
                                 </div>
-                            </div>
-                        </div>
+                            </StyledContainer1Box2Div4Div>
+                            <StyledContainer1Box2Div4Div>
+                                <StyledContainer1Box2Div4DivDiv1>
+                                    <img src={heart} alt="image" />
+                                </StyledContainer1Box2Div4DivDiv1>
+                                <div>
+                                    <p>Liked Songs</p>
+                                    <p style={{color: "gray"}}>Playlist. 120 songs</p>
+                                </div>
+                            </StyledContainer1Box2Div4Div>
+                            <StyledContainer1Box2Div4Div>
+                                <StyledContainer1Box2Div4DivDiv1>
+                                    <img src={heart} alt="image" />
+                                </StyledContainer1Box2Div4DivDiv1>
+                                <div>
+                                    <p>Liked Songs</p>
+                                    <p style={{color: "gray"}}>Playlist. 120 songs</p>
+                                </div>
+                            </StyledContainer1Box2Div4Div>
+                            <StyledContainer1Box2Div4Div>
+                                <StyledContainer1Box2Div4DivDiv1>
+                                    <img src={heart} alt="image" />
+                                </StyledContainer1Box2Div4DivDiv1>
+                                <div>
+                                    <p>Liked Songs</p>
+                                    <p style={{color: "gray"}}>Playlist. 120 songs</p>
+                                </div>
+                            </StyledContainer1Box2Div4Div>
+                            <StyledContainer1Box2Div4Div>
+                                <StyledContainer1Box2Div4DivDiv1>
+                                    <img src={heart} alt="image" />
+                                </StyledContainer1Box2Div4DivDiv1>
+                                <div>
+                                    <p>Liked Songs</p>
+                                    <p style={{color: "gray"}}>Playlist. 120 songs</p>
+                                </div>
+                            </StyledContainer1Box2Div4Div>
+                            <StyledContainer1Box2Div4Div>
+                                <StyledContainer1Box2Div4DivDiv1>
+                                    <img src={heart} alt="image" />
+                                </StyledContainer1Box2Div4DivDiv1>
+                                <div>
+                                    <p>Liked Songs</p>
+                                    <p style={{color: "gray"}}>Playlist. 120 songs</p>
+                                </div>
+                            </StyledContainer1Box2Div4Div>
+                            <StyledContainer1Box2Div4Div>
+                                <StyledContainer1Box2Div4DivDiv1>
+                                    <img src={heart} alt="image" />
+                                </StyledContainer1Box2Div4DivDiv1>
+                                <div>
+                                    <p>Liked Songs</p>
+                                    <p style={{color: "gray"}}>Playlist. 120 songs</p>
+                                </div>
+                            </StyledContainer1Box2Div4Div>
+                            <StyledContainer1Box2Div4Div>
+                                <StyledContainer1Box2Div4DivDiv1>
+                                    <img src={heart} alt="image" />
+                                </StyledContainer1Box2Div4DivDiv1>
+                                <div>
+                                    <p>Liked Songs</p>
+                                    <p style={{color: "gray"}}>Playlist. 120 songs</p>
+                                </div>
+                            </StyledContainer1Box2Div4Div>
+                        </StyledContainer1Box2Div4>
 
                     </StyledContainer1Box2>
 
@@ -158,17 +276,17 @@ function Dashboard(){
                     <div>
 
                         <div>
-                            <img src={left} alt="left" />
-                            <img src={right} alt="right" />
+                            <StyledImg src={left} alt="left" />
+                            <StyledImg src={right} alt="right" />
                         </div>
                         <div>
                             <input type="text" placeholder="Search in Albums"/>
-                            <img src={search} alt="search" />
+                            <StyledImg src={search} alt="search" />
                         </div>
                         <div>
                             <div>Upgrade</div>
-                            <img src={invite} alt="invite" />
-                            <img src={user} alt="profile" />
+                            <StyledImg src={invite} alt="invite" />
+                            <StyledImg src={user} alt="profile" />
                         </div>
 
                     </div>
@@ -177,7 +295,7 @@ function Dashboard(){
                         <h1>Good Morning</h1>
                         <div>
                             <div>
-                                <img src="" alt="cover" />
+                                <StyledImg src="" alt="cover" />
                                 <p>Name</p>
                             </div>
                         </div>
