@@ -134,6 +134,43 @@ const StyledContainer1Box2Div4DivDiv1 = styled.div`
     height: 48px;
     border: 1px solid red;
 `
+const StyledContainer2Box1 = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+`
+const StyledContainer2Box1Div1 = styled.div`
+    display: flex;
+    flex-direction: row;
+`
+const StyledContainer2Box1Img = styled.img`
+    width: 35px;
+    height: 35px;
+`
+const StyledContainer2Box1Div2 = styled.div`
+    display: flex;
+    flex-direction: row;
+`
+const StyledContainer2Box1Div3 = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+`
+const StyledContainer2Box1Div3Div = styled.div`
+    background-color: white;
+    color: black;
+    padding: 6px 15px 6px 15px;
+    border-radius: 30px;
+    transition: background-color,
+                color 0.3s ease;
+    &:hover{
+        background-color: #B3B3B3;
+        color: white;
+    }
+`
 
 function Dashboard(){
     return (
@@ -273,23 +310,23 @@ function Dashboard(){
 
                 <StyledContainer2>
 
-                    <div>
+                    <StyledContainer2Box1>
 
-                        <div>
-                            <StyledImg src={left} alt="left" />
-                            <StyledImg src={right} alt="right" />
-                        </div>
-                        <div>
+                        <StyledContainer2Box1Div1>
+                            <StyledContainer2Box1Img src={left} alt="left" />
+                            <StyledContainer2Box1Img src={right} alt="right" />
+                        </StyledContainer2Box1Div1>
+                        <StyledContainer2Box1Div2>
                             <input type="text" placeholder="Search in Albums"/>
                             <StyledImg src={search} alt="search" />
-                        </div>
-                        <div>
-                            <div>Upgrade</div>
-                            <StyledImg src={invite} alt="invite" />
-                            <StyledImg src={user} alt="profile" />
-                        </div>
+                        </StyledContainer2Box1Div2>
+                        <StyledContainer2Box1Div3>
+                            <StyledContainer2Box1Div3Div>Upgrade</StyledContainer2Box1Div3Div>
+                            <StyledContainer2Box1Img src={invite} alt="invite" />
+                            <StyledContainer2Box1Img src={user} alt="profile" />
+                        </StyledContainer2Box1Div3>
 
-                    </div>
+                    </StyledContainer2Box1>
 
                     <div>
                         <h1>Good Morning</h1>
